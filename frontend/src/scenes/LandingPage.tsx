@@ -13,7 +13,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       {/* Header */}
       <HeaderLP />
       {/* Banner */}

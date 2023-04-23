@@ -16,8 +16,8 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   const toggleTheme = (): void => {
     if (theme === 'dark') {
-      document.body.classList.add('light');
       document.body.classList.remove('dark');
+      document.body.classList.add('light');
       setTheme('light');
     } else {
       document.body.classList.remove('light');
@@ -29,6 +29,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const refreshTheme = (): void => {
       localStorage.setItem('theme', theme);
+      document.body.classList.add(theme);
     };
 
     refreshTheme();

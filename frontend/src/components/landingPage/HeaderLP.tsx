@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 import Button from '../ui/Button'
 import Heading from '../ui/Heading'
 import ThemeToggle from '../ThemeToggle'
+import Logo from '../ui/Logo'
 
 const navLinks = [
   {
@@ -18,7 +19,7 @@ const HeaderLP = () => {
   return (
     <div className="flex justify-between items-center py-6 px-8">
       <div>
-        <h5>CodeGPT</h5>
+        <Logo />
       </div>
       <div className="flex justify-center place-items-center gap-8">
         {
