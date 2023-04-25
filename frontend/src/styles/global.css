@@ -29,11 +29,52 @@ html, body {
     rgba(94,120,145,1) 0%, 
     rgba(52,146,164,1) 0%, 
     rgba(143,182,185,1) 81%, 
-    rgba(208,254,255,1) 99%); 
+    rgb(156, 192, 192) 99%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .gradientBackground {
     @apply bg-opacity-5 bg-blue-900 dark:bg-opacity-10  dark:border-slate-600 border-slate-300 border-[1px] dark:shadow-blue-950 shadow-xl;
+}
+
+.gradientBackgroundDark {
+    @apply bg-opacity-100 bg-blue-300 dark:bg-blue-950 dark:bg-opacity-100  dark:border-slate-600 border-slate-300 border-[1px] dark:shadow-blue-950 shadow-xl;
+}
+
+section {
+    padding: 8rem;
+}
+
+.hexagon:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid #6C6;
+    @apply border-b-blue-900 dark:border-opacity-10;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+
+.hexagon {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: #6C6;
+    position: relative;
+}
+
+.hexagon:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.iconColor {
+    @apply text-blue-800 text-opacity-80 dark:text-gray-400;
 }
