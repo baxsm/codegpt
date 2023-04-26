@@ -42,8 +42,12 @@ html, body {
     @apply bg-opacity-100 bg-blue-300 dark:bg-blue-950 dark:bg-opacity-100  dark:border-slate-600 border-slate-300 border-[1px] dark:shadow-blue-950 shadow-xl;
 }
 
+.gradientBackgroundDark2 {
+    @apply bg-opacity-20 bg-blue-800 dark:bg-blue-950 dark:bg-opacity-100  dark:border-slate-600 border-slate-300 border-[1px] dark:shadow-blue-950 shadow-xl;
+}
+
 section {
-    padding: 8rem;
+    padding: 4rem 8rem;
 }
 
 .hexagon:before {

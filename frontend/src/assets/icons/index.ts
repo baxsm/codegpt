@@ -18,6 +18,9 @@ import {DiGo as GoIcon} from 'react-icons/di'
 import {SiKotlin as KotlinIcon} from 'react-icons/si'
 import {SiHtml5 as HtmlIcon} from 'react-icons/si'
 import {DiCss3 as CssIcon} from 'react-icons/di'
+import {BsFillPatchCheckFill as CheckIcon} from 'react-icons/bs'
+import {AiOutlineClose as CloseIcon} from 'react-icons/ai'
+import {AiOutlineReload as ReloadIcon} from 'react-icons/ai'
 
 
 export const languagesIcons = [
@@ -69,5 +72,8 @@ export {
     GoIcon,
     KotlinIcon,
     HtmlIcon,
-    CssIcon
+    CssIcon,
+    CheckIcon,
+    CloseIcon,
+    ReloadIcon
 }

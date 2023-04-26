@@ -1,37 +1,41 @@
-import { cn } from '../../helpers/utils';
-import { VariantProps, cva } from 'class-variance-authority';
-import { HTMLAttributes, forwardRef } from 'react';
+import { cn } from "../../helpers/utils";
+import { VariantProps, cva } from "class-variance-authority";
+import { HTMLAttributes, forwardRef } from "react";
 
-const paragraphVariants = cva(
-  'text-gray-500 font-semibold dark:text-gray-400',
-  {
-    variants: {
-      size: {
-        default: 'text-[1rem]',
-        xl: 'text-4xl',
-        lg: 'text-2xl',
-        md: 'text-xl',
-        sm: 'text-lg',
-        xs: 'text-base',
-      },
+const paragraphVariants = cva("font-semibold", {
+  variants: {
+    size: {
+      default: "text-[1rem]",
+      xl: "text-4xl",
+      lg: "text-2xl",
+      md: "text-xl",
+      sm: "text-lg",
+      xs: "text-base",
     },
-    defaultVariants: {
-      size: 'default'
-    }
-  }
-);
+    color: {
+      white: "text-gray-500 dark:text-gray-400",
+      black: "text-gray-800",
+      dim: 'text-gray-600 dark:text-gray-600'
+    },
+  },
+  defaultVariants: {
+    size: "default",
+    color: "white",
+  },
+});
 
 interface ParagraphProps
   extends HTMLAttributes<HTMLHeadingElement>,
-    VariantProps<typeof paragraphVariants> {}
+    VariantProps<typeof paragraphVariants> {
+  color?: string;
+}
 
 const Paragraph = forwardRef<HTMLHeadingElement, ParagraphProps>(
-  ({ children, className, size, ...props }, ref) => {
-
+  ({ children, className, size, color, ...props }, ref) => {
     return (
       <p
         ref={ref}
-        className={cn(paragraphVariants({ size, className }))}
+        className={cn(paragraphVariants({ size, color, className }))}
         {...props}
       >
         {children}

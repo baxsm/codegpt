@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 const ConnectLP = () => {
   return (
-    <div className="flex justify-between place-items-center gap-12 xl:flex-row flex-col">
+    <div className="flex justify-between place-items-center gap-20 xl:flex-row flex-col">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 h-[400px]"
       >
         <EarthCanvas />
       </motion.div>

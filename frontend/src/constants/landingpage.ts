@@ -52,3 +52,23 @@ export const portfolioProjects = [
         icons: [JavascriptIcon, HtmlIcon, CssIcon]
     }
 ]
+
+export const learnCodeSteps = [
+  "Interactive, hands-on learning",
+  "Step-by-step tutorials",
+  "Designed for all levels"
+]
+
+export const learnCodeBlock = `<!doctype html>
+
+<html>
+
+<body>
+
+<h4 style="color:red; text-align:center;">This is a heading</h4>
+
+<p style="color:blue; text-align:center;">This is a paragraph</p>
+
+</body>
+
+</html>`;
